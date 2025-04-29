@@ -1,0 +1,90 @@
+/* Estilo general para la página */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+#question {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+#score {
+    font-size: 1.2em;
+    margin: 15px;
+    color: #007bff;
+}
+
+#feedback {
+    font-size: 1.2em;
+    margin-top: 10px;
+    transition: opacity 0.5s ease;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el mapa */
+#map {
+    width: 100%; /* Ocupa el ancho completo en pantallas pequeñas */
+    height: 400px; /* Ajuste inicial */
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Ajustes para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    #map {
+        height: 300px; /* Reducir la altura del mapa en móviles */
+    }
+    #question {
+        font-size: 1.2em; /* Texto más compacto */
+    }
+    #score, #feedback {
+        font-size: 1em; /* Ajustar tamaño del texto */
+    }
+    button {
+        font-size: 0.9em; /* Botones más pequeños */
+        padding: 8px 16px;
+    }
+}
+
+/* Ajustes adicionales para pantallas muy pequeñas (teléfonos compactos) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    #map {
+        height: 250px; /* Altura aún más compacta */
+    }
+    button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+}
